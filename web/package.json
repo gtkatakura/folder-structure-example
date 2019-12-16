@@ -11,13 +11,22 @@
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0"
   },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-ramda": "^2.5.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^1.7.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deps:lint": "depcruise --validate .dependency-cruiser.json --webpack-config=dependency-cruiser.config.js src",
-    "deps:svg": "depcruise --exclude \"^node_modules\" --webpack-config=dependency-cruiser.config.js --output-type dot src | dot -T svg > dependencygraph.svg"
+    "deps:svg": "depcruise --exclude \"^node_modules\" --webpack-config=dependency-cruiser.config.js --output-type dot src | dot -T svg > dependency-graph.svg"
   },
   "browserslist": {
     "production": [
