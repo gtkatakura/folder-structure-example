@@ -1,10 +1,14 @@
 const path = require('path')
 
 module.exports = {
+  "plugins": [
+    "ramda",
+  ],
   "extends": [
     "airbnb",
     "plugin:import/errors",
     "plugin:import/warnings",
+    "plugin:ramda/recommended",
   ],
   "rules": {
     "arrow-parens": "off",

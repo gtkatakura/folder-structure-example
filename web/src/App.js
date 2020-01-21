@@ -1,14 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import logo from './logo.svg'
+import './App.css'
 
-function App() {
+export default function Haha() {
+
+}
+
+export const App = a => {
+  if (a === 2) {
+    const [value] = useState(1)
+  }
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit
+          {' '}
+          <code>src/App.js</code>
+          {' '}
+and save to reload.
+          <div><div /></div>
         </p>
         <a
           className="App-link"
@@ -20,7 +33,6 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
